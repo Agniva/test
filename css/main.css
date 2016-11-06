@@ -1,0 +1,106 @@
+/*Base styling*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #d3d9e0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+}
+
+h1{
+	font-size: 1.75em;
+	text-align: center;
+	margin: 24px 24px 16px 24px;
+	color: #46474a;
+	font-weight: 600;
+}
+
+section{
+	padding: 0px 8px 0px 8px;
+}
+
+
+#card_1, #card_2, #card_3 {
+	padding: 8px;
+	position: relative;
+	float: left;
+}
+
+div .material {
+	background-color: #ffffff;
+	border: 1px solid rgba(0,0,0,0.4);
+	border-radius: 4px;
+	position: relative;
+	float: left;
+
+}
+
+h2{
+	font-size: 1.25em;
+	color: #f9f9f9;
+	border-radius: 0px 3px 0px 4px ;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-left: 1px solid rgba(0,0,0,0.2);
+	width: 100px;
+	font-weight: 500;	
+	padding: 4px;
+	text-align: center;
+	position: relative;	
+	top: 0px;
+	left: 100%;
+	margin-left: -100px;
+}
+
+p{
+	padding: 16px;
+	color: #545e63;
+	line-height: 140%;
+}
+
+#chicken{
+	background-color: #fc476a;
+}
+
+#beef{
+	background-color: #ba1e38;
+}
+
+#sushi{
+	background-color: #e2a620;
+}
+
+
+/*Media queries for responsive design*/
+
+@media (min-width: 992px){
+
+	#card_1, #card_2, #card_3{
+		width: 33.33%;
+	}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+
+	#card_1, #card_2{
+		width: 50%;
+	}
+	#card_3{
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 767px){
+
+	#card_1, #card_2, #card_3{
+		width: 100%;
+	}
+
+}
